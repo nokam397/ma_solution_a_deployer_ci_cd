@@ -4,11 +4,12 @@ pipeline{
            stage('build'){
                steps{
                 echo "buildin in progress"
+                sh "cat index.html"
                }
            }
-        stage('second'){
+        stage('deploy'){
             steps{
-            echo "on verra"
+            echo "deploy to integration in progress"
             }
         }
         }
